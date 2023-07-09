@@ -1,0 +1,35 @@
+@import '../../styles/variables.scss';
+
+.sideNavButton {
+    position: relative;
+    display: inline-block;
+    padding: 8px 24px;
+    border-radius: 6px;
+
+    img {
+        vertical-align: middle;
+    }
+
+    &.active {
+        &::before {
+            content: '';
+            position: absolute;
+            top: 50%;
+            right: 0;
+            width: 4px;
+            height: calc(100% + 8px);
+            transform: translateY(-50%);
+            background: linear-gradient(90deg, #EC008C 0%, #FC6767 100%);
+            border-radius: 20px;
+        }
+    }
+
+    &.active,
+    &:hover {
+        background: $BlueThree;
+
+        img {
+            filter: drop-shadow(3px 5px 14px rgba(89, 62, 255, 0.54));
+        }
+    }
+}
