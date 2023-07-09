@@ -1,3 +1,14 @@
-$ColorWhiteOne: #ffffff;
+$WhiteOne: #ffffff;
 
-$ColorBlackOne: #000000;
+$BlackOne: #000000;
+
+$BlueOne: #080B2A;
+$BlueTwo: #2A3E84;
+
+%circleEffect {
+    content: '';
+    border-radius: 356px;
+    filter: blur(175px);
+    background: $BlueTwo;
+    position: absolute;    
+}
