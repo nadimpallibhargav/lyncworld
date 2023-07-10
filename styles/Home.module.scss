@@ -13,3 +13,8 @@
 .mainContentWrapper {
   flex-basis: calc(100% - 95px);
 }
+
+.popularSectionWrapper {
+  display: flex;
+  gap: 15px;
+}

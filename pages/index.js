@@ -1,6 +1,7 @@
 import Head from "next/head";
 import SideNav from "@/components/SideNav/SideNav";
 import Header from "@/components/Header/Header";
+import Popular from "@/components/Popular/Popular";
 import styles from "@/styles/Home.module.scss";
 
 export default function Home() {
@@ -22,7 +23,13 @@ export default function Home() {
           </div>
           <div className={styles.mainContentWrapper}>
             <Header />
-            <main></main>
+            <main>
+              <section>
+                <div className={styles.popularSectionWrapper}>
+                  <Popular />
+                </div>
+              </section>
+            </main>
           </div>
         </div>
       </div>
