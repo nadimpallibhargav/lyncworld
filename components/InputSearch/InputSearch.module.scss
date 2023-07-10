@@ -1,0 +1,23 @@
+@import '../../styles/variables.scss';
+
+.searchWrapper {
+    @extend %inlineFlexAlignCenter;
+    gap: 27px;
+    min-width: 449px;
+    padding: 16px 20px;
+    border-radius: 22px;
+    background: rgba(8, 11, 42, 0.34);
+    backdrop-filter: blur(16.5px);
+
+    button {
+        background: transparent;
+    }
+
+    input {
+        flex-grow: 1;
+        background: transparent;
+        color: $WhiteTwo;
+        font-size: 1.6rem;
+        font-weight: 400;
+    }
+}

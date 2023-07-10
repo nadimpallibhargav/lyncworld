@@ -7,8 +7,8 @@ const SideNav = () => {
   return (
     <div className={styles.sideNav}>
       <div className={styles.logo}>
-        <Link href="/">
-          <Image src="/images/logo.svg" width={57} height={60} alt="logo" />
+        <Link href="/" className={styles.logo}>
+          <Image src="/images/logo.svg" width={72} height={60} alt="logo" />
         </Link>
       </div>
       <ul className={styles.sideNavList}>

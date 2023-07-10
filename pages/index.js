@@ -1,6 +1,7 @@
 import Head from "next/head";
-import styles from "@/styles/Home.module.scss";
 import SideNav from "@/components/SideNav/SideNav";
+import Header from "@/components/Header/Header";
+import styles from "@/styles/Home.module.scss";
 
 export default function Home() {
   return (
@@ -20,7 +21,7 @@ export default function Home() {
             <SideNav />
           </div>
           <div className={styles.mainContentWrapper}>
-            <header></header>
+            <Header />
             <main></main>
           </div>
         </div>

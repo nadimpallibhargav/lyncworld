@@ -1,4 +1,6 @@
 $WhiteOne: #FFFFFF;
+$WhiteTwo: #A1A5B6;
+$WhiteThree: #E2E4E9;
 
 $BlackOne: #000000;
 
@@ -6,11 +8,34 @@ $BlueOne: #080B2A;
 $BlueTwo: #2A3E84;
 $BlueThree: #232966;
 $BlueFour: #2E357B;
+$BlueFive: #93C5FD;
 
 %circleEffect {
     content: '';
     border-radius: 356px;
     filter: blur(175px);
     background: $BlueTwo;
-    position: absolute;    
+    position: absolute;
+    z-index: -1;
+}
+
+%inlineFlexAlignCenter {
+    display: inline-flex;
+    align-items: center;
+}
+
+%flexAlignCenter {
+    display: flex;
+    align-items: center;
+}
+
+%flexJustifyCenter {
+    display: flex;
+    justify-content: center;
+}
+
+%flexAlignJustifyCenter {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }

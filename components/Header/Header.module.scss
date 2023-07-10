@@ -1,0 +1,82 @@
+@import '../../styles/variables.scss';
+
+.Header {
+    nav {
+        @extend %flexAlignCenter;
+        justify-content: space-between;
+    }
+
+    ul {
+        @extend %flexAlignCenter;
+        gap: 16px;
+    }
+
+    .navLinks {
+        @extend %inlineFlexAlignCenter;
+        gap: 4px;
+        height: 56px;
+        color: $WhiteOne;
+        border-radius: 22px;
+        background: rgba(8, 11, 42, 0.34);
+        backdrop-filter: blur(16.5px);
+        font-family: 'Poppins', sans-serif;
+        font-size: 1.6rem;
+        font-weight: 400;
+
+        b {
+            font-weight: 500;
+            line-height: 24px;
+            letter-spacing: 0.32px;
+        }
+    }
+
+    .ethLink {
+        padding-inline: 16px;
+    }
+
+    .notificationLink {
+        padding-inline: 12px;
+    }
+
+    .createLink {
+        padding-inline: 20px;
+    }
+
+    .profileWrapper {
+        @extend %inlineFlexAlignCenter;
+        gap: 16px;
+        padding-left: 19px;
+        border-radius: 100px;
+        position: relative;
+
+        &::before {
+            content: "";
+            width: 2px;
+            height: 100%;
+            position: absolute;
+            left: 0;
+            top: 0;
+            background: linear-gradient(90deg, #9796F0 0%, #FBC7D4 100%);
+            border-radius: 100px;
+        }
+    }
+
+    .profileName {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+        padding-right: 18px;
+
+        b {
+            color: $WhiteThree;
+            font-size: 1.8rem;
+            font-weight: 600;
+        }
+
+        span {
+            color: $BlueFive;
+            font-size: 1.4rem;
+            font-weight: 400;
+        }
+    }
+}
