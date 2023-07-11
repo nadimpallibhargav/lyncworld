@@ -4,6 +4,7 @@ import Header from "@/components/Header/Header";
 import Popular from "@/components/Popular/Popular";
 import Wallet from "@/components/Wallet/Wallet";
 import styles from "@/styles/Home.module.scss";
+import Trending from "@/components/Trending/Trending";
 
 export default function Home() {
   return (
@@ -30,6 +31,9 @@ export default function Home() {
                   <Popular />
                   <Wallet />
                 </div>
+              </section>
+              <section>
+                <Trending />
               </section>
             </main>
           </div>
