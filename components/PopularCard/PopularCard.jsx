@@ -4,7 +4,7 @@ import styles from "./PopularCard.module.scss";
 const PopularCard = () => {
   return (
     <div className={styles.popularNftCard}>
-      <Image
+      <Image priority
         className={styles.popularNftCardImage}
         src="/images/popularCardOne.png"
         width={455}

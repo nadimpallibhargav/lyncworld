@@ -1,0 +1,134 @@
+@import '../../styles/variables.scss';
+
+.wallet {
+    flex-grow: 1;
+
+    .headingViewMore {
+        align-items: flex-start;
+        a {
+            padding-top: 2px;
+        }
+    }
+
+    .walletCard {
+        border-radius: 24px;
+        background: rgba(255, 255, 255, 0.04);
+        backdrop-filter: blur(7px);
+        width: 395px;
+        height: 307px;
+        padding: 6px 16px 1px 17px;
+    }
+
+    h3 {
+        color: $WhiteOne;
+        font-size: 2.2rem;
+        font-weight: 700;
+        padding-bottom: 4px;
+        text-align: center;
+    }
+
+    h4 {
+        color: $WhiteOne;
+        font-family: 'Saira', sans-serif;
+        font-size: 3.6rem;
+        font-weight: 600;
+        line-height: 57px;
+        padding-bottom: 3px;
+        text-align: center;
+
+        span {
+            font-size: 1.6rem;
+            font-weight: 600;
+            line-height: 25px;
+        }
+    }
+
+    .ethWrapper {
+        @extend %flexAlignCenter;
+        padding-left: 62px;
+        padding-bottom: 14px;
+
+        p {
+            color: $WhiteOne;
+            font-family: 'Inter', sans-serif;
+            font-size: 1.6rem;
+            font-weight: 400;
+            line-height: 19px;
+            padding-left: 17px;
+            padding-right: 94px;
+
+            span {
+                color: rgba(255, 255, 255, 0.6);
+            }
+        }
+    }
+
+    .graphContent {
+        display: flex;
+        gap: 32px;
+    }
+
+    .graphHeading {
+        @extend %flexAlignCenter;
+        gap: 16px;
+        padding-bottom: 8px;
+
+        p {
+            color: $WhiteFour;
+            font-size: 1.4rem;
+            font-weight: 500;
+        }
+    }
+
+    .graphIcon {
+        width: 41px;
+        height: 41px;
+        @extend %flexAlignJustifyCenter;
+        border-radius: 50%;
+    }
+
+    .graphWrapper {
+        text-align: center;
+
+        h5 {
+            margin-bottom: -17px;
+
+            span {
+                font-family: 'Oxanium', sans-serif;
+                font-weight: 700;
+
+                &:first-of-type {
+                    font-size: 2.4rem;
+                    line-height: 30px;
+                }
+
+                &:last-of-type {
+                    font-size: 1.2rem;
+                    line-height: 15px;
+                    letter-spacing: 0.1em;
+                }
+            }
+        }
+    }
+
+    .earningsGraph {
+        .graphIcon {
+            background: $GreenOne;
+        }
+    }
+
+    .spendingsGraph {
+        .graphIcon {
+            background: $RedOne;
+        }
+    }
+
+    .earningsValue {
+        color: $GreenTwo;
+    }
+
+    .spendingsValue {
+        color: $RedTwo;
+    }
+
+}

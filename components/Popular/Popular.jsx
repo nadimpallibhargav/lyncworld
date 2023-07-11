@@ -12,8 +12,8 @@ const Popular = () => {
           <span>Show More</span>
           <Image
             src="/images/downArrowBlue.svg"
-            width={24}
-            height={24}
+            width={16}
+            height={8}
             alt="image"
           />
         </Link>

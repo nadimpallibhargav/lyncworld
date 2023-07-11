@@ -2,6 +2,7 @@ import Head from "next/head";
 import SideNav from "@/components/SideNav/SideNav";
 import Header from "@/components/Header/Header";
 import Popular from "@/components/Popular/Popular";
+import Wallet from "@/components/Wallet/Wallet";
 import styles from "@/styles/Home.module.scss";
 
 export default function Home() {
@@ -27,6 +28,7 @@ export default function Home() {
               <section>
                 <div className={styles.popularSectionWrapper}>
                   <Popular />
+                  <Wallet />
                 </div>
               </section>
             </main>
