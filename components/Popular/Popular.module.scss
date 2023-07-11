@@ -1,0 +1,10 @@
+@import '../../styles/variables.scss';
+
+.popular {
+    flex-grow: 0;
+    .popularCardsWrapper {
+        display: flex;
+        gap: 16px;
+    }
+}
+
