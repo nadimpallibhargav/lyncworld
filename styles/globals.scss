@@ -117,6 +117,23 @@ h2 {
   font-weight: 700;
 }
 
-.slick-prev:before {
-  display: none;
+[class*='slick-prev'] {
+  display: none !important;
+}
+
+[class*='slick-next'] {
+  right: 0 !important;
+  transform: translateX(50%) !important;
+  width: 36px !important;
+  height: 36px !important;
+
+  &::before {
+    font-size: 3.6rem !important;
+  }
+}
+
+.slick-initialized .slick-slide {
+  &:not(:first-of-type) {
+    padding-left: 42px;
+  }
 }

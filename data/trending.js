@@ -22,8 +22,22 @@ export const carouselData = [
       "Win prizes upto 25L for the Bangalore Web3 Championship Tournament.",
     link: "/tournaments",
     linkText: "Compete",
+  },  
+  {
+    image: SliderOne,
+    title: "Explore Games",
+    description: "Explore exciting games featured by IndiGG.",
+    link: "/games",
+    linkText: "Explore",
   },
-  
+  {
+    image: SliderOne,
+    title: "Live Tournaments",
+    description:
+      "Win prizes upto 25L for the Bangalore Web3 Championship Tournament.",
+    link: "/tournaments",
+    linkText: "Compete",
+  },  
   {
     image: SliderOne,
     title: "Explore Games",
@@ -36,11 +50,10 @@ export const carouselData = [
 export const settings = {
   className: "slider variable-width",
   dots: false,
-  infinite: true,
-  centerMode: true,
-  slidesToShow: 1,
+  infinite: false,
+  slidesToShow: 4,
+  centerPadding: "60px",
   slidesToScroll: 1,
-  variableWidth: true,
   responsive: [
     {
       breakpoint: 991,
