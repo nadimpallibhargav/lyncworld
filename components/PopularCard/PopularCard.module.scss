@@ -91,4 +91,12 @@
         background: $BlueSix;
         backdrop-filter: blur(6px);
     }
+
+    @media (max-width: 1350px) {
+        .popularNftDetails {
+            justify-content: center;
+            gap: 20px;
+        }
+    }
 }
+

@@ -5,6 +5,7 @@
 
     .headingViewMore {
         align-items: flex-start;
+
         a {
             padding-top: 2px;
         }
@@ -131,4 +132,20 @@
         color: $RedTwo;
     }
 
+    @media (max-width: 1250px) {
+        .walletCard {
+            width: 100%;
+        }
+        .ethWrapper {
+            justify-content: center;
+            padding-left: 0;
+            gap: 20px;
+            p {
+                padding-inline: 0;
+            }
+        }
+        .graphContent {
+            justify-content: center;
+        }
+    }
 }
