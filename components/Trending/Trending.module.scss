@@ -83,3 +83,14 @@
         -webkit-text-fill-color: transparent;
     }
 }
+
+@media (max-width: 375px) {
+    .trendingCard {
+        max-width: 100%;
+        height: auto;
+        .trendingImage {
+            max-width: 100%;
+            height: auto;
+        }
+    }   
+}

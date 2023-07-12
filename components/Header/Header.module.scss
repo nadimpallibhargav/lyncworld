@@ -203,4 +203,14 @@
         }
     }
 
+    @media (max-width: 568px) {
+        .profileWrapper {
+            img {
+                &:first-of-type {
+                    max-width: 40px;
+                }
+            }
+        }       
+    }
+
 }

@@ -107,4 +107,7 @@
             width: initial;
         }
     }
+    @media (max-width: 768px) {
+        flex-basis: 100%;
+    }    
 }

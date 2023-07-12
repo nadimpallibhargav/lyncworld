@@ -101,6 +101,7 @@ ul {
     display: flex;
     align-items: center;
     gap: 10px;
+    text-wrap: nowrap;
 
     span {
       color: $BlueSeven;
@@ -140,5 +141,41 @@ h2 {
 @media (max-width: 1380px) {
   [class*='slick-next'] {
     transform: translate(50%, -50%) !important;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding-inline: 10px;
+  }
+
+  .headingViewMore {
+    h2 {
+      font-size: 2rem;
+    }
+  }
+
+  [class*='slick-next'] {
+    transform: translate(0%, -50%) !important;
+  }
+}
+
+@media (max-width: 768px) {
+  .headingViewMore {
+    a {
+      gap: 5px;
+      span {
+        font-size: 12px;
+      }
+      img {
+        max-width: 10px;
+      }
+    }
+  }
+}
+
+@media (max-width: 568px) {
+  main {
+    padding-left: 0;
   }
 }

@@ -16,7 +16,6 @@
         background: rgba(255, 255, 255, 0.04);
         backdrop-filter: blur(7px);
         width: 395px;
-        height: 307px;
         padding: 6px 16px 1px 17px;
     }
 
@@ -146,6 +145,18 @@
         }
         .graphContent {
             justify-content: center;
+        }
+    }
+
+    @media (max-width: 568px) {
+        .graphContent {
+            flex-direction: column;
+        }       
+        .graphHeading {
+            justify-content: center;
+        }
+        .ethWrapper {
+            padding-bottom: 30px;
         }
     }
 }

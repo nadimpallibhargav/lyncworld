@@ -13,7 +13,7 @@ const Trending = () => {
         {carouselData.map((carousel, i) => {
           return (
             <div key={i} className={styles.trendingCard}>
-              <Image src={carousel.image} alt="image" />
+              <Image src={carousel.image} alt="image" className={styles.trendingImage} />
               <div className={styles.trendingCardHeading}>
                 <h3>{carousel.title}</h3>
                 <Link href="/">
