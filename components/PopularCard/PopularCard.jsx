@@ -1,12 +1,12 @@
 import Image from "next/image";
 import styles from "./PopularCard.module.scss";
 
-const PopularCard = () => {
+const PopularCard = ({src}) => {
   return (
     <div className={styles.popularNftCard}>
-      <Image
+      <Image priority
         className={styles.popularNftCardImage}
-        src="/images/popularCardOne.png"
+        src={src}
         width={455}
         height={305}
         alt="image"

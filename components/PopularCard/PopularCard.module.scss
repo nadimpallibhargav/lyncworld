@@ -1,7 +1,7 @@
 @import '../../styles/variables.scss';
 
 .popularNftCard {
-    width: 455px;
+    flex-basis: 50%;
     height: 305px;
     position: relative;
     border-radius: 24px;
@@ -29,7 +29,7 @@
         background: rgba(0, 0, 0, 0.13);
         backdrop-filter: blur(6px);
         display: flex;
-        justify-content: end;
+        justify-content: flex-end;
         gap: 63px;
         margin-bottom: 8px;
     }
@@ -91,4 +91,23 @@
         background: $BlueSix;
         backdrop-filter: blur(6px);
     }
+
+    @media (max-width: 1350px) {
+        .popularNftDetails {
+            justify-content: center;
+            gap: 20px;
+        }
+    }
+
+    @media (max-width: 1350px) {
+        .timerWrapper {
+            width: initial;
+        }
+        .ethWrapper {
+            width: initial;
+        }
+    }
+    @media (max-width: 768px) {
+        flex-basis: 100%;
+    }    
 }

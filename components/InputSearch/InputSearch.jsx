@@ -7,7 +7,7 @@ const InputSearch = () => {
       <button>
         <Image src='/images/search.svg' width={24} height={24} alt="image" />
       </button>
-      <input type="text" placeholder="Search by creator or collection" />
+      <input id="search" name="search" type="text" placeholder="Search by creator or collection" />
     </span>
   );
 };

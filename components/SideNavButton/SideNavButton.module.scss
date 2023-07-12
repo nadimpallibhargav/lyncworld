@@ -32,4 +32,21 @@
             filter: drop-shadow(3px 5px 14px rgba(89, 62, 255, 0.54));
         }
     }
+
+    @media (max-width: 768px) {
+        padding: 4px;
+
+        img {
+            max-width: 20px;
+        }
+    }
+
+    @media (max-width: 568px) {
+        &.active {
+            &::before {
+                width: 2px;
+                height: calc(100% + 4px);
+            }
+        }
+    }
 }

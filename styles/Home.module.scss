@@ -7,14 +7,201 @@
 }
 
 .sideNavWrapper {
-  flex-basis: 72px;
+  width: 72px;
 }
 
 .mainContentWrapper {
-  flex-basis: calc(100% - 95px);
+  width: calc(100% - 95px);
 }
 
 .popularSectionWrapper {
   display: flex;
   gap: 15px;
+  padding-bottom: 19px;
+}
+
+.trendingSection {
+  padding-bottom: 50px;
+}
+
+.trending {
+
+  .trendingTitle {
+    padding-bottom: 26px;
+  }
+
+  .trendingHeading {
+    @extend %flexAlignCenter;
+    padding-bottom: 6px;
+    position: relative;
+
+    &::before {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 2px;
+      background: linear-gradient(89deg, #2D3F9A 0%, rgba(45, 63, 154, 0.00) 100%);
+    }
+  }
+
+  .trendingFilter {
+    position: relative;
+
+    &::before {
+      content: "";
+      position: absolute;
+      left: -1px;
+      top: -1px;
+      background: linear-gradient(136.01deg, #2E409C 0%, #080B2A 100%);
+      border-radius: 8px;
+      width: calc(100% + 2px);
+      height: calc(100% + 2px);
+      z-index: -1;
+    }
+
+    button {
+      border-radius: 8px;
+      position: relative;
+      background: transparent;
+    }
+
+    span {
+      color: $WhiteSix;
+      font-size: 1.8rem;
+      font-weight: 500;
+      padding: 6px 14px;
+      position: relative;
+      border-radius: 8px;
+      display: inline-block;
+      background-color: transparent;
+    }
+  }
+
+  .buttonsWrapper {
+    border-radius: 8px;
+    background: $BlackTwo;
+    padding: 5px 6px;
+    @extend %flexAlignCenter;
+  }
+
+  .activeFilter {
+    &::before {
+      content: "";
+      position: absolute;
+      left: -1px;
+      top: -1px;
+      background: linear-gradient(95.38deg, #2C3E98 2.52%, rgba(255, 255, 255, 0) 100%);
+      border-radius: 8px;
+      width: calc(100% + 2px);
+      height: calc(100% + 2px);
+      z-index: 0;
+    }
+
+    span {
+      background-color: $BlackTwo;
+      color: $WhiteThree;
+    }
+
+  }
+}
+
+.weeklyPopular {
+  padding-bottom: 50px;
+
+  .weeklyPopularHeading {
+    padding-bottom: 34px;
+
+    h2 {
+      color: $WhiteOne;
+      font-family: 'Inter', sans-serif;
+      font-size: 2.4rem;
+      font-weight: 600;
+      line-height: 24px;
+      padding-bottom: 19px;
+    }
+  }
+
+  .filters {
+    @extend %flexAlignCenter;
+    gap: 12px;
+
+    button {
+      height: 32px;
+      @extend %flexAlignJustifyCenter;
+      border-radius: 20px;
+      border: 1px solid $GrayOne;
+      padding: 4px 20px;
+      background: transparent;
+      color: $WhiteOne;
+      font-family: 'Inter', sans-serif;
+      font-size: 1.6rem;
+      font-weight: 500;
+      line-height: 24px;
+      text-wrap: nowrap;
+
+      &:hover {
+        background: linear-gradient(90deg, #15BFFD 0%, #0083CD 100%);
+      }
+
+      &.filterActive {
+        border-radius: 23px;
+        background: linear-gradient(90deg, #15BFFD 0%, #0083CD 100%);
+        border: none;
+      }
+    }
+  }
+}
+
+@media (max-width: 1250px) {
+  .popularSectionWrapper {
+    flex-direction: column;
+    gap: 70px;
+  }
+}
+
+@media (max-width: 1050px) {
+  .weeklyPopular {
+    .filters {
+      button {
+        padding: 4px 10px;
+      }
+    }
+  }
+}
+
+@media (max-width: 992px) {
+  .weeklyPopular {
+    .filters {
+      overflow-x: scroll;
+      padding-bottom: 15px;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .layoutWrapper {
+    gap: 5px;
+  }
+
+  .sideNavWrapper {
+    width: 50px;
+  }
+
+  .mainContentWrapper {
+    flex-grow: 1;
+  }
+}
+
+@media (max-width: 768px) {
+  .sideNavWrapper {
+    width: 35px;
+  }
+}
+
+@media (max-width: 568px) {
+  .layoutWrapper {
+    padding-top: 10px;
+  } 
 }
