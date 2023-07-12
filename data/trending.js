@@ -66,11 +66,10 @@ export const carouselData = [
 ];
 
 export const settings = {
-  className: "slider variable-width",
+  className: "slider",
   dots: false,
   infinite: false,
   slidesToShow: 4,
-  centerPadding: "60px",
   slidesToScroll: 1,
   responsive: [
     {

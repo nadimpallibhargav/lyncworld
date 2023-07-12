@@ -1,7 +1,7 @@
 @import '../../styles/variables.scss';
 
 .popular {
-    flex-grow: 0;
+    flex-basis: 71%;
     .popularCardsWrapper {
         display: flex;
         gap: 16px;

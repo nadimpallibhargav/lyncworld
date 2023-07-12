@@ -123,7 +123,7 @@ h2 {
 
 [class*='slick-next'] {
   right: 0 !important;
-  transform: translate(50%, -50%) !important;
+  transform: translateY(-50%) !important;
   width: 36px !important;
   height: 36px !important;
 
@@ -133,8 +133,6 @@ h2 {
   }
 }
 
-.slick-initialized .slick-slide {
-  &:not(:first-of-type) {
-    padding-left: 42px;
-  }
+body.menu-open {
+  overflow: hidden;
 }
