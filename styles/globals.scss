@@ -43,6 +43,9 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   position: relative;
+  background-image: url('../public/images/starOne.svg'), url('../public/images/starTwo.svg'), url('../public/images/starThree.svg'), url('../public/images/starFour.svg'), url('../public/images/starFive.svg'), url('../public/images/starSix.svg');
+  background-repeat: no-repeat;
+  background-position: right 182px top 470px, top 356px right 334px, left 412px top 447px, top 519px right 593px, top 944px right 385px, top 1107px right 515px;
 
   &:before {
     @extend %circleEffect;
@@ -164,9 +167,11 @@ h2 {
   .headingViewMore {
     a {
       gap: 5px;
+
       span {
         font-size: 12px;
       }
+
       img {
         max-width: 10px;
       }
