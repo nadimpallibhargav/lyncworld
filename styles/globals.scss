@@ -136,3 +136,9 @@ h2 {
 body.menu-open {
   overflow: hidden;
 }
+
+@media (max-width: 1380px) {
+  [class*='slick-next'] {
+    transform: translate(50%, -50%) !important;
+  }
+}

@@ -95,12 +95,15 @@
         height: 2px;
         background: $WhiteOne;
         transition: transform 0.3s ease;
+
         &:nth-child(1) {
             transform: rotate(45deg) translate(5px, 5px);
         }
+
         &:nth-child(2) {
             opacity: 0;
         }
+
         &:nth-child(3) {
             transform: rotate(-45deg) translate(7px, -8px);
         }
@@ -127,6 +130,47 @@
             gap: 50px;
             padding: 50px 15px 10px;
             background: $BlackOne;
+        }
+    }
+
+    @media (max-width: 1350px) {
+        nav {
+            gap: 10px;
+        }
+
+        .profileWrapper {
+            gap: 12px;
+            padding-left: 12px;
+        }
+
+        .profileName {
+            padding-right: 0;
+        }
+
+        ul {
+            gap: 6px;
+        }
+    }
+
+    @media (max-width: 1100px) {
+        .profileWrapper {
+            gap: 4px;
+            padding-left: 10px;
+        }
+        .navLinks {
+            padding-inline: 10px;
+            font-size: 1.4rem;           
+        }
+        .profileName {
+            padding-right: 0px;
+    
+            b {
+                font-size: 1.6rem;
+            }
+    
+            span {
+                font-size: 1.2rem;
+            }
         }
     }
 }

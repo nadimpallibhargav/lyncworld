@@ -20,4 +20,17 @@
         font-size: 1.6rem;
         font-weight: 400;
     }
+    @media (max-width: 1300px) {
+        gap: 6px;
+        min-width: 300px;
+    }
+    @media (max-width: 1200px) {
+        min-width: 240px;
+        img {
+            max-width: 16px;
+        }
+        input {
+            font-size: 1.4rem;
+        }
+    }
 }

@@ -73,6 +73,13 @@ export const settings = {
   slidesToScroll: 1,
   responsive: [
     {
+      breakpoint: 1350,
+      settings: {
+        slidesToShow: 3.4,
+        slidesToScroll: 1,
+      },
+    },
+    {
       breakpoint: 991,
       settings: {
         slidesToShow: 2,
