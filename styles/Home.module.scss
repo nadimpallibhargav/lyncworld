@@ -138,6 +138,7 @@
       font-size: 1.6rem;
       font-weight: 500;
       line-height: 24px;
+      text-wrap: nowrap;
 
       &:hover {
         background: linear-gradient(90deg, #15BFFD 0%, #0083CD 100%);
@@ -165,6 +166,15 @@
     button {
       padding: 4px 10px;
     }
+  }
+ }
+}
+
+@media (max-width: 992px) {
+ .weeklyPopular {
+  .filters {
+    overflow-x: scroll;
+    padding-bottom: 15px;
   }
  }
 }

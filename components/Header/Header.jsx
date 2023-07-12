@@ -14,8 +14,10 @@ const Header = () => {
 
   useEffect(() => {
     if (isMenuOpen) {
+      document.documentElement.classList.add("menu-open");
       document.body.classList.add("menu-open");
     } else {
+      document.documentElement.classList.remove("menu-open");
       document.body.classList.remove("menu-open");
     }
   }, [isMenuOpen]);
