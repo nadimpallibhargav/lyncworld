@@ -123,12 +123,13 @@ h2 {
 
 [class*='slick-next'] {
   right: 0 !important;
-  transform: translateX(50%) !important;
+  transform: translate(50%, -50%) !important;
   width: 36px !important;
   height: 36px !important;
 
   &::before {
     font-size: 3.6rem !important;
+    color: #ffffff99 !important;
   }
 }
 

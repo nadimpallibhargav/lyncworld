@@ -1,49 +1,67 @@
 import SliderOne from "@/public/images/trendingOne.png";
+import SliderTwo from "@/public/images/trendingTwo.png";
+import SliderThree from "@/public/images/trendingThree.png";
+import SliderFour from "@/public/images/trendingFour.png";
+
+import SliderOneIcon from "@/public/images/trendingOneIcon.png";
+import SliderTwoIcon from "@/public/images/trendingTwoIcon.png";
+import SliderThreeIcon from "@/public/images/trendingThreeIcon.png";
+import SliderFourIcon from "@/public/images/trendingFourIcon.png";
 
 export const carouselData = [
   {
     image: SliderOne,
-    title: "Clan Chief Application",
-    description: "Become a leader, earn rewards, and build your own clan.",
-    link: "/college-titan",
-    linkText: "Join",
+    logo: SliderOneIcon,
+    title: "Ready Players",
+    name: "@dicar",
+    price: "$232,102",
+    ethName: "Stretch Of Time",
+    ethValue: "0.045 ETH",
   },
   {
-    image: SliderOne,
-    title: "Complete Quests",
-    description: "Complete Web3 quests and win big rewards.",
-    link: "/quests",
-    linkText: "Play Now",
+    image: SliderTwo,
+    logo: SliderTwoIcon,
+    title: "Dragon’s Den",
+    name: "@astroo2",
+    price: "$172,023",
+    ethName: "Arcade Land",
+    ethValue: "0.045 ETH",
   },
   {
-    image: SliderOne,
-    title: "Live Tournaments",
-    description:
-      "Win prizes upto 25L for the Bangalore Web3 Championship Tournament.",
-    link: "/tournaments",
-    linkText: "Compete",
+    image: SliderThree,
+    logo: SliderThreeIcon,
+    title: "Crippled World",
+    name: "@micle",
+    price: "$92,002",
+    ethName: "Shinsekai Portal",
+    ethValue: "0.045 ETH",
   },  
   {
-    image: SliderOne,
-    title: "Explore Games",
-    description: "Explore exciting games featured by IndiGG.",
-    link: "/games",
-    linkText: "Explore",
+    image: SliderFour,
+    logo: SliderFourIcon,
+    title: "Crippled World",
+    name: "@11 eror D.",
+    price: "$88,024",
+    ethName: "Paper Cut",
+    ethValue: "0.045 ETH",
   },
   {
     image: SliderOne,
-    title: "Live Tournaments",
-    description:
-      "Win prizes upto 25L for the Bangalore Web3 Championship Tournament.",
-    link: "/tournaments",
-    linkText: "Compete",
+    logo: SliderOneIcon,
+    title: "Ready Players",
+    name: "@dicar",
+    price: "$232,102",
+    ethName: "Stretch Of Time",
+    ethValue: "0.045 ETH",
   },  
   {
-    image: SliderOne,
-    title: "Explore Games",
-    description: "Explore exciting games featured by IndiGG.",
-    link: "/games",
-    linkText: "Explore",
+    image: SliderTwo,
+    logo: SliderTwoIcon,
+    title: "Ready Players",
+    name: "@dicar",
+    price: "$232,102",
+    ethName: "Stretch Of Time",
+    ethValue: "0.045 ETH",
   },
 ];
 

@@ -15,7 +15,7 @@ const Trending = () => {
             <div key={i} className={styles.trendingCard}>
               <Image src={carousel.image} alt="image" />
               <div className={styles.trendingCardHeading}>
-                <h3>Ready Players</h3>
+                <h3>{carousel.title}</h3>
                 <Link href="/">
                   <Image
                     src="/images/favouriteVector.png"
@@ -27,14 +27,14 @@ const Trending = () => {
               </div>
               <div className={styles.trendingCardContent}>
                 <Image
-                  src="/images/trendingNftLogo.png"
+                  src={carousel.logo}
                   width={60}
                   height={60}
                   alt="image"
                 />
                 <div className={styles.profileDetails}>
                   <div className={styles.profileName}>
-                    <h3>@dicar</h3>
+                    <h3>{carousel.name}</h3>
                     <Image
                       src="/images/verifiedIcon.svg"
                       width={17}
@@ -42,11 +42,11 @@ const Trending = () => {
                       alt="image"
                     />
                   </div>
-                  <p>$232,102</p>
+                  <p>{carousel.price}</p>
                 </div>
                 <div className={styles.profileEth}>
-                  <h3>Stretch Of Time</h3>
-                  <p>0.045 ETH</p>
+                  <h3>{carousel.ethName}</h3>
+                  <p>{carousel.ethValue}</p>
                 </div>
               </div>
             </div>

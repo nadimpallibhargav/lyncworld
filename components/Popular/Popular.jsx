@@ -19,8 +19,8 @@ const Popular = () => {
         </Link>
       </div>
       <div className={styles.popularCardsWrapper}>
-        <PopularCard />
-        <PopularCard />
+        <PopularCard src="/images/popularCardOne.png" />
+        <PopularCard src="/images/popularCardTwo.png" />
       </div>
     </div>
   );
